@@ -4,14 +4,14 @@
             <div class="main_container">
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="social_icon_container">
-    					    <span class="social_icon" v-for="item in social_media">
-                                <a :href="item.url" target="_blank">
-                                    <p class="accessibility">{{item.name}}</p>
-                                    <i :class="item.iconClass" aria-hidden="true"></i>
-                                </a>
-                            </span>
-                        </div>
+             <!--           <div class="social_icon_container">-->
+    					    <!--<span class="social_icon" v-for="item in social_media">-->
+             <!--                   <a :href="item.url" target="_blank">-->
+             <!--                       <p class="accessibility">{{item.name}}</p>-->
+             <!--                       <i :class="item.iconClass" aria-hidden="true"></i>-->
+             <!--                   </a>-->
+             <!--               </span>-->
+             <!--           </div>-->
                         <div class="site_logo center-block" :class="{ mini_logo: scrollY }">
                             <a href="/">
                                 <img :alt="siteInfo.siteName" :src="siteInfo.siteLogo">
@@ -71,15 +71,15 @@
                                             </div>
         							    </li>
         					        </ul>
-        					        <div class="mobile_social_icon_container">
-        					            <p class="social_title">Follow Us on Social Media</p>
-                					    <span class="social_icon" v-for="item in social_media">
-                                            <a :href="item.url" target="_blank">
-                                                <p class="accessibility">{{item.name}}</p>
-                                                <i :class="item.iconClass" aria-hidden="true"></i>
-                                            </a>
-                                        </span>
-                                    </div>
+        					        <!--<div class="mobile_social_icon_container">-->
+        					        <!--    <p class="social_title">Follow Us on Social Media</p>-->
+                					<!--    <span class="social_icon" v-for="item in social_media">-->
+                     <!--                       <a :href="item.url" target="_blank">-->
+                     <!--                           <p class="accessibility">{{item.name}}</p>-->
+                     <!--                           <i :class="item.iconClass" aria-hidden="true"></i>-->
+                     <!--                       </a>-->
+                     <!--                   </span>-->
+                     <!--               </div>-->
         						</nav>
         				    </transition>
         				</div>
