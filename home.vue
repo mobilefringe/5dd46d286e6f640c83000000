@@ -33,7 +33,7 @@
                     </slick>
                     <div class="next"></div>
                 </div>
-                <!--<messages-component></messages-component>-->
+                <messages-component></messages-component>
                 <div class="main_container">
                     <h2 class="home_title center" v-if="featuredItems && featuredItems.length > 0">Events & Promotions</h2>
                     <div class="row margin_40 home_events">
