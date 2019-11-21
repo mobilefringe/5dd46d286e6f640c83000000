@@ -124,7 +124,6 @@
                         }
                     }
                     
-                    console.log(response)
                     if(response && response[0]){
                         this.main = response[0].data
                         if(response[0].data){
