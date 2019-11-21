@@ -164,7 +164,6 @@
                     return this.getTodayHours;
                 },
                 getPropertyAddress() {
-                    console.log(this.property)
                     return this.property.address1 + ' ' + this.property.city + ' ' + this.property.country + ' ' + this.property.province_state
                 },
                 noPromotion() {
