@@ -169,6 +169,7 @@
                 noPromotion() {
                     return this.menu_items
                 }
+                console.log(this.property)
             },
             methods: {
                 changeLocale: function(val) {
