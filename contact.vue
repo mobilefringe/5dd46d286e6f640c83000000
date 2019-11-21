@@ -129,7 +129,7 @@
                         if(response[0].data && response[0].data.subpages){
                            this.contactInfo = response[0].data.subpages[0];
                         }
-                        console.log(contactInfo)
+                        console.log(this.contactInfo)
                     }
                     this.dataLoaded = true;
                 });
