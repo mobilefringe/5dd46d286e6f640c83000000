@@ -79,20 +79,20 @@
                     pageBanner: null
                 }
             },
-            // mounted () {
-            //     this.form_data.first_name = this.$route.query.name;
-            //     $("#fieldglrtiu").val(this.form_data.first_name);
-            //     this.form_data.email = this.$route.query.email;
-            //     $("#newsletter_email").val(this.form_data.email);
-            // },
-            // watch : {
-            //     $route () {
-            //         this.form_data.first_name = this.$route.query.name;
-            //         $("#fieldglrtiu").val(this.form_data.first_name);
-            //         this.form_data.email = this.$route.query.email;
-            //         $("#newsletter_email").val(this.form_data.email);
-            //     }
-            // },
+            mounted () {
+                this.form_data.first_name = this.$route.query.name;
+                $("#fieldyhukldd").val(this.form_data.first_name);
+                this.form_data.email = this.$route.query.email;
+                $("#newsletter_email").val(this.form_data.email);
+            },
+            watch : {
+                $route () {
+                    this.form_data.first_name = this.$route.query.name;
+                    $("#fieldglrtiu").val(this.form_data.first_name);
+                    this.form_data.email = this.$route.query.email;
+                    $("#newsletter_email").val(this.form_data.email);
+                }
+            },
             created() {
                 this.loadData().then(response => {
                     var temp_repo = this.findRepoByName('Newsletter Banner');
