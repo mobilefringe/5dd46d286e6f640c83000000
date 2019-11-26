@@ -17,18 +17,22 @@
                                 <div class="row">
                                     <div class="col-sm-6" >
                                         <label for="fieldglrtiu" class="accessibility">First Name</label>
-                                        <input v-model="form_data.first_name" required class="margin_20 form-control" id="fieldyhukldd" name="cm-f-yhukldd" type="text" placeholder="First Name">
+                                        <input v-model="form_data.first_name" required class="margin_20 form-control" id="fieldglrtiu" name="cm-f-glrtiu" type="text" placeholder="First Name">
                                     </div>
                                     <div class="col-sm-6" >
                                         <label for="fieldglrtdl" class="accessibility">Last Name</label>
-                                        <input v-model="form_data.last_name" required class="margin_20 form-control" id="fieldyhukldh" name="cm-f-yhukldh" type="text" placeholder="Last Name">
+                                        <input v-model="form_data.last_name" required class="margin_20 form-control" id="fieldglrtdl" name="cm-f-glrtdl" type="text" placeholder="Last Name">
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-sm-12">
                                         <label for="newsletter_email" class="accessibility">Email</label>
-                                        <input v-model="form_data.email" required class="margin_20 form-control" name="cm-ykykad-ykykad" type="email" placeholder="Email" id="newsletter_email">
+                                        <input v-model="form_data.email" required class="margin_20 form-control" name="cm-qtttjt-qtttjt" type="email" placeholder="Email" id="newsletter_email">
                                     </div>
+                                    <!--<div class="col-sm-6">-->
+                                    <!--    <label for="fieldglrtdr" class="accessibility">Phone Number</label>-->
+                                    <!--    <input id="fieldglrtdr" v-model="form_data.phone" required class="margin_20 form-control" name="cm-f-glrtdr" type="text" placeholder="Phone Number" />-->
+                                    <!--</div>-->
                                 </div>
                                 <div class="row">
                                     <div class="col-sm-12">
@@ -48,7 +52,10 @@
                                 </div>
                               
                               
-                              <!--<div><label>Email </label><input autocomplete="Email" aria-label="Email" class="js-cm-email-input" id="fieldEmail" maxlength="200" name="cm-ykykad-ykykad" required="" type="email"></div></div><button type="submit">Subscribe</button></form></div><script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>-->
+                              <div><h1 color="#000"></h1><form class="js-cm-form" id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1A2FD19F3F7203DAD4A4A3E5920220527BCBE295883C7565A1B61778914F9F661C4DD25C891DE330C54B1FBB92CE4A98A6">
+                              <div><div><label>First Name </label><input aria-label="First Name" id="fieldyhukldd" maxlength="200" name="cm-f-yhukldd"></div>
+                              <div><label>Last Name </label><input aria-label="Last Name" id="fieldyhukldh" maxlength="200" name="cm-f-yhukldh"></div>
+                              <div><label>Email </label><input autocomplete="Email" aria-label="Email" class="js-cm-email-input" id="fieldEmail" maxlength="200" name="cm-ykykad-ykykad" required="" type="email"></div></div><button type="submit">Subscribe</button></form></div><script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
                               
                               
                             </form> 
