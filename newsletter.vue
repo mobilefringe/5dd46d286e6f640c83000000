@@ -16,17 +16,17 @@
                             <form class="newsletter_form form-horizontal" action="//mobilefringe.createsend.com/t/d/s/ykykad/" method="post">
                                 <div class="row">
                                     <div class="col-sm-6" >
-                                        <label for="fieldyhukldd" class="accessibility">First Name</label>
+                                        <label for="fieldyhukldd" class="visuallyhidden">First Name</label>
                                         <input v-model="form_data.first_name" required class="margin_20 form-control" id="fieldyhukldd" name="cm-f-yhukldd" type="text" placeholder="First Name">
                                     </div>
                                     <div class="col-sm-6" >
-                                        <label for="fieldyhukldh" class="accessibility">Last Name</label>
+                                        <label for="fieldyhukldh" class="visuallyhidden">Last Name</label>
                                         <input v-model="form_data.last_name" required class="margin_20 form-control" id="fieldyhukldh" name="cm-f-yhukldh" type="text" placeholder="Last Name">
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <label for="newsletter_email" class="accessibility">Email</label>
+                                        <label for="newsletter_email" class="visuallyhidden">Email</label>
                                         <input v-model="form_data.email" required class="margin_20 form-control" name="cm-ykykad-ykykad" type="email" placeholder="Email" id="newsletter_email">
                                     </div>
 
