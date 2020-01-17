@@ -25,7 +25,7 @@
                                 <div class="banner_image" v-bind:style="{ backgroundImage: 'url(' + banner.image_url + ')' }"></div>
                             </div>
                             <div v-else>
-                                <a :href="banner.url" target="_blank" aria-label="Go to page for ">
+                                <a :href="banner.url" :aria-label="'Go to page for ' + banner.name + '.'">
                                     <div class="banner_image" v-bind:style="{ backgroundImage: 'url(' + banner.image_url + ')' }"></div>
                                 </a>
                             </div>
@@ -213,7 +213,6 @@
                             }
                         }
                     });
-                    console.log(banners)
                     return banners
                 },
                 featuredItems() {
