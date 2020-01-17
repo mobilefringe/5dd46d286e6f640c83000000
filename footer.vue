@@ -16,14 +16,7 @@
             <div class="footer_content">
                 <div class="row main_container">
                     <p class="margin_20">{{ property.name }}</p>    
-                    <div class="margin_20 social_icon_container">
-					    <span class="social_icon" v-for="item in social_media">
-                            <a :href="item.url" target="_blank">
-                                <p class="visuallyhidden">{{item.name}}</p>
-                                <i :class="item.iconClass" aria-hidden="true"></i>
-                            </a>
-                        </span>
-                    </div>
+                    
                     <p>{{ getPropertyAddress }}</p>
                     <p v-if="property.contact_phone" class="margin_40"><a :href="'tel:' + property.contact_phone">{{ property.contact_phone }}</a></p>
                     <div class="footer_links">
@@ -56,7 +49,6 @@
                     newsletter_email: ""
                 }
             },
-            props:['social_media'],
             created () {
                 this.dataLoaded = true;
             },
