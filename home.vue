@@ -68,39 +68,6 @@
                     	    </div>
                         </div>
                     </div>
-                    <!--<h2 v-if="instaFeed.length > 0" class="home_title center">In Our Feed</h2>-->
-                    <!--<div class="row hidden-xs margin_60">-->
-                    <!--    <div class="col-sm-8 col-sm-offset-2">-->
-                    <!--        <div class="insta-feed-container">-->
-                    <!--            <div class="insta-feed-image " v-for="(item, index) in instaFeed">-->
-                    <!--                <a :href="item.link" target="_blank">-->
-                    <!--                    <div class="insta-img" v-bind:style="{ 'background-image': 'url(' + item.images.standard_resolution.url + ')' }"></div>-->
-                    <!--                    <div class="insta_content">-->
-                    <!--                        <p class="insta_caption">{{ item.caption.text }}</p>-->
-                    <!--                        <p class="insta_user">@{{ item.user.username }}</p>-->
-                    <!--                        <i class="insta_icon fab fa-instagram"></i>-->
-                    <!--                    </div>-->
-                    <!--                </a>-->
-                    <!--            </div>-->
-                    <!--        </div>-->
-                    <!--    </div>-->
-                    <!--</div>-->
-                    <!--<div class="visible-xs margin_60 insta-feed-container">-->
-                    <!--    <div class="insta_prev"></div>-->
-                    <!--    <slick ref="slick" :options="instaOptions">-->
-                    <!--        <div class="insta-feed-image " v-for="(item, index) in instaFeed">-->
-                    <!--            <a :href="item.link" target="_blank">-->
-                    <!--                <div class="insta-img" v-bind:style="{ 'background-image': 'url(' + item.images.standard_resolution.url + ')' }"></div>-->
-                    <!--                <div class="insta_content">-->
-                    <!--                    <p class="insta_caption">{{ item.caption.text }}</p>-->
-                    <!--                    <p class="insta_user">@{{ item.user.username }}</p>-->
-                    <!--                    <i class="insta_icon fab fa-instagram"></i>-->
-                    <!--                </div>-->
-                    <!--            </a>-->
-                    <!--        </div>-->
-                    <!--    </slick>-->
-                    <!--    <div class="insta_next"></div>-->
-                    <!--</div>-->
                 </div>
             </div>
         </transition>
@@ -177,8 +144,6 @@
                             insta.caption.text = _.truncate(insta.caption.text, { 'length': 60, 'separator': ' ' });
                         }
                     });
-                    
-                    
                     this.dataLoaded = true;  
                     this.meta = this.findMetaDataByPath(this.$route.path);
                 });
@@ -194,7 +159,6 @@
                 ]),
                 homeBanners() {
                     var banners = [];
-                    
                     _.forEach(this.$store.state.banners, function (value, key) {
                         var today = new Date();
                         var start = new Date (value.start_date);
@@ -207,7 +171,6 @@
                             } else {
                                 banners.push(value);
                             }
-                            
                             if (value.cms_fields.subheader) {
                                 value.heading = value.cms_fields.subheader;
                             }
@@ -258,7 +221,6 @@
                             } else {
                                 regular_events.push(value);
                             }
-                            
                             if (featured_events.length >= 2) {
                                 events = _.sortBy(featured_events, function(o) { return o.feature_item_index });
                             } else {
@@ -270,7 +232,6 @@
                     });
                     var feature_items = _.concat(promotions, events)
                     feature_items = _.orderBy(feature_items, function(o) { return o.feature_item_index });
-
                     return feature_items
                 }
             },
