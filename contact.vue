@@ -14,12 +14,6 @@
                             <breadcrumb></breadcrumb>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <!--<div v-if="main" class="margin_60" v-html="main.body"></div>-->
-                            <!--<p class="margin_60">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac egestas nisl. Cras odio massa, tincidunt ut faucibus in, egestas non nisl. Morbi vel nibh metus. In quis est eget risus semper facilisis. Sed in felis vel lorem consectetur convallis. Aliquam fringilla facilisis ipsum et sagittis. Maecenas rutrum urna id efficitur ultrices. Duis porttitor, ante quis consectetur aliquet, elit massa dignissim ex, non luctus lacus dolor quis ipsum.</p>-->
-                        </div>
-                    </div>
                     <div class="row links" id="contact_us_container">
                         <div class="col-md-4">
                             <div v-if="contactInfo.body" class="margin_60 padding_60" v-html="contactInfo.body"></div>    
