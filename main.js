@@ -30,7 +30,7 @@ require.config({
         'search-component': 'https://mmvue.codecloudapp.com/search-component.vue?noext',
         'slick': 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min',
         'vue-slick': 'https://mmvue.codecloudapp.com/slick.vue?noext',
-        'vue-social-sharing': 'https://cdn.jsdelivr.net/npm/vue-social-sharing@2.3.3/dist/vue-social-sharing.min',
+        // 'vue-social-sharing': 'https://cdn.jsdelivr.net/npm/vue-social-sharing@2.3.3/dist/vue-social-sharing.min',
         'lightbox': 'https://codecloud.cdn.speedyrails.net/sites/5b1550796e6f641cab010000/application/javascript/1530111447000/lightbox_accessibility',
         'vue-lazy-load': 'https://unpkg.com/vue-lazyload/vue-lazyload',
         'vee-validate' : 'https://cdn.jsdelivr.net/npm/vee-validate@2.1.4/dist/vee-validate',
@@ -160,23 +160,23 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'vuex-router-syn
                         ]
                     }
                 ],
-                social_media: [
-                    {
-                        name: "Facebook",
-                        url: "https://www.facebook.com/TheLandinginRenton",
-                        iconClass: "fab fa-facebook"
-                    },
-                    {
-                        name: "Instagram",
-                        url: "https://www.instagram.com/Thelandinginrenton/",
-                        iconClass: "fab fa-instagram"
-                    },
-                    {
-                        name: "YouTube",
-                        url: "https://www.youtube.com/user/TheLandingInRenton",
-                        iconClass: "fab fa-youtube"
-                    }
-                ],
+                // social_media: [
+                //     {
+                //         name: "Facebook",
+                //         url: "https://www.facebook.com/TheLandinginRenton",
+                //         iconClass: "fab fa-facebook"
+                //     },
+                //     {
+                //         name: "Instagram",
+                //         url: "https://www.instagram.com/Thelandinginrenton/",
+                //         iconClass: "fab fa-instagram"
+                //     },
+                //     {
+                //         name: "YouTube",
+                //         url: "https://www.youtube.com/user/TheLandingInRenton",
+                //         iconClass: "fab fa-youtube"
+                //     }
+                // ],
             }
         },
         created: function ()  {
