@@ -36,9 +36,9 @@
     <body>
         <div id="app" v-cloak>
             <loading-spinner v-if="!dataLoaded"></loading-spinner>
-            <header-component :menu_items="menu_items" :social_media="social_media" v-if="dataLoaded"></header-component>
+            <header-component :menu_items="menu_items" v-if="dataLoaded"></header-component>
             <router-view v-if="dataLoaded" class="page-content" role="main"></router-view>
-            <footer-component :social_media="social_media" v-if="dataLoaded"></footer-component>
+            <footer-component v-if="dataLoaded"></footer-component>
         </div>
         <script src="https://unpkg.com/babel-polyfill@6.26.0/dist/polyfill.min.js"></script>
         <script src="https://unpkg.com/es6-shim@0.35.3/es6-shim.min.js"></script>
