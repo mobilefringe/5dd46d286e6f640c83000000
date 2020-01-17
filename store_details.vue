@@ -268,7 +268,7 @@
                         console.log(this.storeHours)
                         
                         // DELIVERY
-                        var delivery_category = 5495;
+                        var delivery_category = 8323;
                         var categories = this.currentStore.categories;
                         var subcategories = this.currentStore.subcategories;
                         if (_.includes(categories, delivery_category) && !_.isEmpty(subcategories)) {
