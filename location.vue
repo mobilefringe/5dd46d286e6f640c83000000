@@ -22,6 +22,9 @@
                 </div>
                 <div class="main_container">
                     <div class="location_map">
+                            <p class="visuallyhidden">
+                              <a :href="'https://maps.google.com/?q=' + property.name">View {{ property.name }} on Google Maps</a>.
+                            </p>
                         <iframe aria-hidden="true" title="Google maps for Bowles Crossing" :src="propertyAddress()" width="100%" height="490" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
                 </div>
