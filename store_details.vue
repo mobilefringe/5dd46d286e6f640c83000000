@@ -185,8 +185,9 @@
                         }
                     }
                     
-                    this.dataLoaded = true;
                     this.updateCurrentStore(this.id);
+                    this.getSVGMap;
+                    this.dataLoaded = true;
                 });
             },
             watch: {
