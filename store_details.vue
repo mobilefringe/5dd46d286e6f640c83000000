@@ -48,7 +48,7 @@
                         </div>
                         <div class="col-md-8">
                             <div id="map" class="margin_20">
-                                <mapplic-png-map ref="pngmap_ref" :height="314" :hovertip="true" :storelist="allStores" :floorlist="floorList" :svgWidth="property.map_image_width" :svgHeight="property.map_image_height" @updateMap="updatePNGMap" class="store_details_map"></mapplic-png-map>
+                                <mapplic-map id="details_map" ref="svgmap_ref" :height="300" :minimap= "false" :deeplinking="false" :sidebar="false" :hovertip="true" :maxscale= "5" :storelist="processedStores" :floorlist="floorList" :svgWidth="2500" :svgHeight="2500" @updateMap="updateSVGMap" :key="currentStore.id"></mapplic-map>
                             </div>
                             <div class=" margin_30 store_details_desc" v-html="currentStore.rich_description"></div>
                             <!--delivery-->
@@ -206,24 +206,19 @@
                     'findCouponById',
                     'findRepoByName'
                 ]),
-                getPNGurl () {
-                    return "https://www.mallmaverick.com" + this.property.map_url;
+                svgMapRef() {
+                    return this.$refs.svgmap_ref;
                 },
-                pngMapRef() {
-                    return this.$refs.pngmapref;
-                },
-                allStores() {
-                    this.processedStores.map(function(store){
-                        store.zoom = 1;
-                    })
-                    return this.processedStores;
+                getSVGMap () {
+                    var mapURL = "https://www.mallmaverick.com" + this.property.svgmap_url.split("?")[0];
+                    return mapURL
                 },
                 floorList () {
                     var floor_list = [];
                     var floor_1 = {};
                     floor_1.id = "first-floor";
                     floor_1.title = "Level One";
-                    floor_1.map = this.getPNGurl;
+                    floor_1.map = this.getSVGMap;
                     floor_1.z_index = null;
                     floor_1.show = true;
                     floor_list.push(floor_1);
