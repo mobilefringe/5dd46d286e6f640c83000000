@@ -63,7 +63,6 @@
                                     
                                 </div>
                             </div>
-                            
                             <div v-if="currentStore.events">
                                 <h2 class="store_details_title">Current Events</h2>
                                 <div class="row margin_40">
@@ -143,7 +142,7 @@
 </template>
 
 <style>
-    .store_details_map .mapplic-popup-link {
+    #details_map .mapplic-popup-link {
         display: none !important;
     }
 </style>
