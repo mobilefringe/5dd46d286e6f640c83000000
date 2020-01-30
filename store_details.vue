@@ -243,13 +243,13 @@
                     if (this.currentStore === null || this.currentStore === undefined) {
                         this.$router.replace({ name: 'stores' });
                     } else {
+                        this.currentStore.zoom = 1.5;
                         if (_.includes(this.currentStore.store_front_url_abs, 'missing')) {
                             this.currentStore.no_logo = true
                         } else {
                             this.currentStore.no_logo = false
                         }
                     
-                        
                         var vm = this;
                         var storeHours = [];
                         _.forEach(this.currentStore.store_hours, function (value, key) {
@@ -304,7 +304,6 @@
                         var temp_event = [];
                         _.forEach(this.currentStore.events, function(value, key) {
                             var current_event = vm.findEventById(value);
-                            
                             if (_.includes(current_event.image_url, 'missing')) {
                                 current_event.image_url = "//codecloud.cdn.speedyrails.net/sites/5dce0b076e6f6403ca430000/image/png/1552583012044/landing_placeholder.png";
                             }
@@ -313,13 +312,6 @@
                         }); 
                         this.storeEvents = temp_event;
                         
-                        var vm = this;
-                        var temp_coupon = [];
-                        _.forEach(this.currentStore.coupons, function(value, key) {
-                            var current_coupon = vm.findCouponById(value);
-                            temp_coupon.push(current_coupon);
-                        }); 
-                        // this.storeCoupons = temp_coupon;
                     }
                     this.$breadcrumbs[1].meta.breadcrumb = this.currentStore.name
                 },
