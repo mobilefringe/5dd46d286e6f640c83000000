@@ -243,7 +243,8 @@
                     if (this.currentStore === null || this.currentStore === undefined) {
                         this.$router.replace({ name: 'stores' });
                     } else {
-                        this.currentStore.zoom = 1.5;
+                        this.currentStore.zoom = 2;
+                        
                         if (_.includes(this.currentStore.store_front_url_abs, 'missing')) {
                             this.currentStore.no_logo = true
                         } else {
