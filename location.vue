@@ -68,10 +68,9 @@
                     if(repo !== null && repo !== undefined) {
                        repo = repo.images;
                        this.pageBanner = repo[0];
-                    }
-                    else {
+                    } else {
                         this.pageBanner = {
-                            "image_url": "//codecloud.cdn.speedyrails.net/sites/5dce0b076e6f6403ca430000/image/png/1552582149966/landing_default_banner.png"
+                            "image_url": "//codecloud.cdn.speedyrails.net/sites/5dd46d286e6f640c83000000/image/png/1582144432143/bowles_inside_banner.png"
                         }
                     }
                     
