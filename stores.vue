@@ -132,7 +132,7 @@
                     }
                     else {
                         this.pageBanner = {
-                            "image_url": "//codecloud.cdn.speedyrails.net/sites/5d6fe3996e6f647c7f000000/image/png/1552582149966/landing_default_banner.png"
+                            "image_url": "//codecloud.cdn.speedyrails.net/sites/5dd46d286e6f640c83000000/image/png/1582144432143/bowles_inside_banner.png"
                         }
                     }
                     this.dataLoaded = true;
