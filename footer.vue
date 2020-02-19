@@ -4,8 +4,8 @@
             <div class="newsletter_signup">
                 <div class="row main_container">
                     <div class="col-md-12 center-block" id="newsletter_margin">
-                        <!--<span>Sign up to receive the latest deals and news!</span>-->
-                        <span>Join our newsletter to receive the latest promotions, news and events!</span>
+                        <span>Sign up to receive the latest deals and news!</span>
+                        <!--<span>Join our newsletter to receive the latest promotions, news and events!</span>-->
                         <label for="userName" class="visuallyhidden">Enter Name</label>
                         <input id="userName" v-model="newsletter_name" type="text" placeholder="Name*" class="newsletter_control" required />
                         <label for="emailAddress" class="visuallyhidden">Enter Email Address</label>
