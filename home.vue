@@ -187,7 +187,7 @@
                         var showOnWebDate = moment.tz(value.show_on_web_date, this.timezone).format();
                         if (today >= showOnWebDate) {
                             if (_.includes(value.image_url, 'missing')) {
-                                value.image_url = "//codecloud.cdn.speedyrails.net/sites/5dce0b076e6f6403ca430000/image/png/1552583012044/landing_placeholder.png";
+                                value.image_url = "//codecloud.cdn.speedyrails.net/sites/5dd46d286e6f640c83000000/image/png/1582144433361/bowles_crossing_placeholder_image.png";
                             }
                             // Sort Featured Promotions
                             if (value.is_featured) {
@@ -213,7 +213,7 @@
                         var showOnWebDate = moment.tz(value.show_on_web_date, this.timezone).format();
                         if (today >= showOnWebDate) {
                             if (_.includes(value.image_url, 'missing')) {
-                                value.image_url = "//codecloud.cdn.speedyrails.net/sites/5dce0b076e6f6403ca430000/image/png/1552583012044/landing_placeholder.png";
+                                value.image_url = "//codecloud.cdn.speedyrails.net/sites/5dd46d286e6f640c83000000/image/png/1582144433361/bowles_crossing_placeholder_image.png";
                             }
                             // Sort Featured Events
                             if (value.is_featured) {
