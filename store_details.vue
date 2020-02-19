@@ -294,7 +294,7 @@
                             var current_promo = vm.findPromoById(value);
                             
                             if (_.includes(current_promo.image_url, 'missing')) {
-                                current_promo.image_url = "//codecloud.cdn.speedyrails.net/sites/5dce0b076e6f6403ca430000/image/png/1552583012044/landing_placeholder.png";
+                                current_promo.image_url = "//codecloud.cdn.speedyrails.net/sites/5dd46d286e6f640c83000000/image/png/1582144433361/bowles_crossing_placeholder_image.png";
                             }
     
                             temp_promo.push(current_promo);
@@ -306,7 +306,7 @@
                         _.forEach(this.currentStore.events, function(value, key) {
                             var current_event = vm.findEventById(value);
                             if (_.includes(current_event.image_url, 'missing')) {
-                                current_event.image_url = "//codecloud.cdn.speedyrails.net/sites/5dce0b076e6f6403ca430000/image/png/1552583012044/landing_placeholder.png";
+                                current_event.image_url = "//codecloud.cdn.speedyrails.net/sites/5dd46d286e6f640c83000000/image/png/1582144433361/bowles_crossing_placeholder_image.png";
                             }
     
                             temp_event.push(current_event);
