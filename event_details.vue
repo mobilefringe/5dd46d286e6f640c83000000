@@ -98,7 +98,7 @@
                             }
                         } else {
                             if (_.includes(this.currentEvent.event_image_url_abs, 'missing')) {
-                                this.currentEvent.image_url = "//codecloud.cdn.speedyrails.net/sites/5dce0b076e6f6403ca430000/image/png/1552583012044/landing_placeholder.png";    
+                                this.currentEvent.image_url = "//codecloud.cdn.speedyrails.net/sites/5dd46d286e6f640c83000000/image/png/1582144433361/bowles_crossing_placeholder_image.png";    
                             }
                         }
 					}
