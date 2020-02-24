@@ -102,8 +102,8 @@
                 return {
                     dataLoaded: false,
                     pageBanner: null,
-                    toggleEvents: true,
-                    // toggleEvents: false,
+                    // toggleEvents: true,
+                    toggleEvents: false,
                     togglePromos: false,
                     promos: [],
                     morePromos: [],
