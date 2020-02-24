@@ -65,17 +65,9 @@
                                         <h3 class="event_name">{{ item.name }}</h3>
                                         <p class="event_dates"><span v-if="isMultiDay(item)">{{ item.start_date | moment("MMMM D", timezone)}} - {{ item.end_date | moment("MMMM D", timezone)}}</span><span v-else>{{ item.start_date | moment("MMMM D", timezone)}}</span></p>
                                         <div class="event_desc" v-html="item.description_short"></div>
-                                        
-                                        <keep-alive>
-
-
-                                        
-                                            <router-link :to="{ name: 'promotionDetails', params: { id: item.slug, banner: pageBanner }}">
-                                                <div class="animated_btn event_link">View Promotion Details <i class="fas fa-angle-double-right"></i></div>
-                                            </router-link>
-                                        
-                                        </keep-alive>
-                                        
+                                        <router-link :to="{ name: 'promotionDetails', params: { id: item.slug, banner: pageBanner }}">
+                                            <div class="animated_btn event_link">View Promotion Details <i class="fas fa-angle-double-right"></i></div>
+                                        </router-link>
                                         <hr class="event_seperator">
                                     </div>
                                 </div>
