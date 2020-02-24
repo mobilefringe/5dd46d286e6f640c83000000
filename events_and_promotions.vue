@@ -128,7 +128,7 @@
                     //     this.handleButton();
                     // }
                     
-                    console.log(this.$router.params)
+                    console.log(this.$route)
                     
                     //check if query i passed in is here (i.e. is promo)
                     
