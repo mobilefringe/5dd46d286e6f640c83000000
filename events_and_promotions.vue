@@ -102,8 +102,8 @@
                 return {
                     dataLoaded: false,
                     pageBanner: null,
-                    // toggleEvents: true,
-                    toggleEvents: false,
+                    toggleEvents: true,
+                    // toggleEvents: false,
                     togglePromos: false,
                     promos: [],
                     morePromos: [],
@@ -122,15 +122,22 @@
                             "image_url": "//codecloud.cdn.speedyrails.net/sites/5dd46d286e6f640c83000000/image/png/1582144432143/bowles_inside_banner.png"
                         }
                     }
-                    // if (_.isEmpty(this.eventList)) {
-                    //     this.toggleEvents = false;
-                    //     this.togglePromos = true;
-                    //     this.handleButton();
-                    // }
+                    if (_.isEmpty(this.eventList)) {
+                        this.toggleEvents = false;
+                        this.togglePromos = true;
+                        this.handleButton();
+                    }
                     this.dataLoaded = true;
                 });
             },
-        
+            
+        //   beforeRouteUpdate(to, from, next) {
+        //     this.$nextTick(function() {
+        //       this.updatePageContent()
+        //     })
+        //     next()
+        //   },
+                    
             computed: {
                 ...Vuex.mapGetters([
                     'property',
