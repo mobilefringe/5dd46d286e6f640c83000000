@@ -132,8 +132,8 @@
                     //check if query i passed in is here (i.e. is promo)
                     
                     if (this.$route.query.promoView == "show") {
-                        togglePromos: true
-                        toggleEvents: false
+                        this.togglePromos: true
+                        this.toggleEvents: false
                     }
                     
                     this.dataLoaded = true;
