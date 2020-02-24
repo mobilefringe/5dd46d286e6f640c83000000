@@ -41,12 +41,16 @@
                     		            <!--    <div class="animated_btn pull-left">Back to Events & Promotions</div>    -->
                     		            <!--</router-link>    -->
                     		            
+                    		            <!--<router-link to="/events-and-promotions">-->
+                    		            <!--    <div class="animated_btn pull-left" @click="goBackToPromoView()">Back to Events & Promotions</div>    -->
+                    		            <!--</router-link>    -->
+                    		            
                     		            
                     		            <!--<a class="animated_btn pull-left" @click="$router.go(-1)">Back to Events & Promotions</a>-->
                     		            
-                    		            <router-link to="/events-and-promotions">
-                    		                <div class="animated_btn pull-left" @click="goBackToPromoView()">Back to Events & Promotions</div>    
-                    		            </router-link>    
+                    		            <a class="animated_btn pull-left" @click="goBackToPromoView()">Back to Events & Promotions</a>
+                    		            
+                    		            
                     		            
                     		            
                     		            
@@ -152,6 +156,8 @@
                     return share_url
                 },
                 goBackToPromoView(){
+                    router.push({ /events_and_promotions })
+                    
                     this.$emit('promoView', this.promoView) // emits this event name, and argument passed to it
                     console.log('goBackToPromoView', this.promoView)
                     
