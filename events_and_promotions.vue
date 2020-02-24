@@ -102,7 +102,8 @@
                 return {
                     dataLoaded: false,
                     pageBanner: null,
-                    toggleEvents: true,
+                    // toggleEvents: true,
+                    toggleEvents: false,
                     togglePromos: false,
                     promos: [],
                     morePromos: [],
