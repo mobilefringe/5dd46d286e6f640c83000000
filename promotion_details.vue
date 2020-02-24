@@ -45,7 +45,7 @@
                     		            <!--<a class="animated_btn pull-left" @click="$router.go(-1)">Back to Events & Promotions</a>-->
                     		            
                     		            <router-link to="/events-and-promotions">
-                    		                <div class="animated_btn pull-left" @click="goBackToPromoView">Back to Events & Promotions</div>    
+                    		                <div class="animated_btn pull-left" @click="goBackToPromoView()">Back to Events & Promotions</div>    
                     		            </router-link>    
                     		            
                     		            
