@@ -129,16 +129,7 @@
                     this.dataLoaded = true;
                 });
             },
-            
-            
-              beforeRouteUpdate(to, from, next) {
-                this.$nextTick(function() {
-                  console.log('logic here?')
-                })
-                next()
-              },
-            
-            
+        
             computed: {
                 ...Vuex.mapGetters([
                     'property',
