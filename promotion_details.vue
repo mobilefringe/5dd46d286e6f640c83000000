@@ -153,6 +153,7 @@
                 },
                 goBackToPromoView(){
                     this.$emit('promoView', this.promoView)
+                    console.log('goBackToPromoView', this.promoView)
                     
                 }
 			}
