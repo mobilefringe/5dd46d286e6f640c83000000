@@ -128,6 +128,8 @@
                     //     this.handleButton();
                     // }
                     
+                    console.log(this.$router)
+                    
                     //check if query i passed in is here (i.e. is promo)
                     
                     this.dataLoaded = true;
