@@ -36,10 +36,21 @@
                             <div class="col-md-12">
                                 <div class="row margin_30">
                                     <div class="col-md-12">
+                                    
                                   <!--      <router-link to="/events-and-promotions">-->
                     		            <!--    <div class="animated_btn pull-left">Back to Events & Promotions</div>    -->
                     		            <!--</router-link>    -->
-                    		            <a class="animated_btn pull-left" @click="$router.go(-1)">Back to Events & Promotions</a>
+                    		            
+                    		            
+                    		            <!--<a class="animated_btn pull-left" @click="$router.go(-1)">Back to Events & Promotions</a>-->
+                    		            
+                    		            <router-link to="/events-and-promotions">
+                    		                <div class="animated_btn pull-left" @click="goBackToPromoView">Back to Events & Promotions</div>    
+                    		            </router-link>    
+                    		            
+                    		            
+                    		            
+                    		            
                                     </div>
                                 </div>
                                 <social-sharing v-if="currentPromo" :url="shareURL(currentPromo.slug)" :title="currentPromo.name" :description="currentPromo.description" :quote="truncate(currentPromo.description)" :twitter-user="siteInfo.twitterHandle" :media="currentPromo.image_url" inline-template>
