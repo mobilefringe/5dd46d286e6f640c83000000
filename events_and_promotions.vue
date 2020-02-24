@@ -135,13 +135,6 @@
                     this.dataLoaded = true;
                 });
             },
-            
-        //   beforeRouteUpdate(to, from, next) {
-        //     this.$nextTick(function() {
-        //       this.updatePageContent()
-        //     })
-        //     next()
-        //   },
                     
             computed: {
                 ...Vuex.mapGetters([
