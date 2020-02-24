@@ -48,7 +48,7 @@
                             </div>
                         </div>
                     </div>
-                    <div v-if="togglePromos">
+                    <div v-if="togglePromos" @promoView="togglePromos = $event">
                         <transition-group name="list" tag="div">
                             <div v-if="promos.length >= 1" v-for="item in promos" :key="item.id">
                                 <div class="row event_container">
