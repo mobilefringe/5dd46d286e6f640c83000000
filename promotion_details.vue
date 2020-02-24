@@ -76,7 +76,9 @@
                     dataLoaded: false,
                     pageBanner: null,
                     currentPromo: null,
-                    siteInfo: site
+                    siteInfo: site,
+                    
+                    promoView: true,
                 }
             },
             created() {
@@ -137,6 +139,10 @@
 				shareURL(slug) {
                     var share_url = window.location.href
                     return share_url
+                },
+                goBackToPromoView(){
+                    this.$emit('promoView', this.promoView)
+                    
                 }
 			}
         });
