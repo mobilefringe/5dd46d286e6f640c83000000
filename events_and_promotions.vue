@@ -103,7 +103,6 @@
                     dataLoaded: false,
                     pageBanner: null,
                     toggleEvents: true,
-                    // toggleEvents: false,
                     togglePromos: false,
                     promos: [],
                     morePromos: [],
@@ -122,15 +121,20 @@
                             "image_url": "//codecloud.cdn.speedyrails.net/sites/5dd46d286e6f640c83000000/image/png/1582144432143/bowles_inside_banner.png"
                         }
                     }
-                    // if (_.isEmpty(this.eventList)) {
-                    //     this.toggleEvents = false;
-                    //     this.togglePromos = true;
-                    //     this.handleButton();
-                    // }
+                    if (_.isEmpty(this.eventList)) {
+                        this.toggleEvents = false;
+                        this.togglePromos = true;
+                        this.handleButton();
+                    }
                     
                     console.log(this.$route)
                     
                     //check if query i passed in is here (i.e. is promo)
+                    
+                    if (this.$route.query.promoView == "show") {
+                        togglePromos: true
+                        toggleEvents: false
+                    }
                     
                     this.dataLoaded = true;
                 });
