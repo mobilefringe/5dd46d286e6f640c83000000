@@ -122,11 +122,14 @@
                             "image_url": "//codecloud.cdn.speedyrails.net/sites/5dd46d286e6f640c83000000/image/png/1582144432143/bowles_inside_banner.png"
                         }
                     }
-                    if (_.isEmpty(this.eventList)) {
-                        this.toggleEvents = false;
-                        this.togglePromos = true;
-                        this.handleButton();
-                    }
+                    // if (_.isEmpty(this.eventList)) {
+                    //     this.toggleEvents = false;
+                    //     this.togglePromos = true;
+                    //     this.handleButton();
+                    // }
+                    
+                    //check if query i passed in is here (i.e. is promo)
+                    
                     this.dataLoaded = true;
                 });
             },
