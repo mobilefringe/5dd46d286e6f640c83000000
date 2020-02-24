@@ -152,7 +152,7 @@
                     return share_url
                 },
                 goBackToPromoView(){
-                    this.$emit('promoView', this.promoView)
+                    this.$emit('promoView', this.promoView) // emits this event name, and argument passed to it
                     console.log('goBackToPromoView', this.promoView)
                     
                 }
