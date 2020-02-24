@@ -69,7 +69,7 @@
                                         <!--    <div class="animated_btn event_link">View Promotion Details <i class="fas fa-angle-double-right"></i></div>-->
                                         <!--</router-link>-->
                                         
-                                        <router-link :to="{ params: { id: item.slug, banner: pageBanner }}">
+                                        <router-link :to="{ `path:/${item.slug}` }">
                                             <div class="animated_btn event_link">View Promotion Details <i class="fas fa-angle-double-right"></i></div>
                                         </router-link>
                                         
