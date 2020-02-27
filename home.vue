@@ -205,6 +205,10 @@
                                 regular_promotions.push(value);
                             }
                             
+                            if (value.store != null && value.store != undefined && _.includes(value.store.store_front_url_abs, 'missing')) {
+                                value.store.store_front_url_abs = "//codecloud.cdn.speedyrails.net/sites/5dd46d286e6f640c83000000/image/png/1582144433361/bowles_crossing_placeholder_image.png";
+                            }
+                            
                             if (featured_promotions.length >= 2) {
                                 promotions = _.sortBy(featured_promotions, function(o) { return o.feature_item_index });
                             } else {
