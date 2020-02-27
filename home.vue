@@ -54,7 +54,16 @@
                     	    </div>
                     	    <div v-if="item.promotionable_id" class="feature_item_container">
                     	        <router-link class="tile" :to="{ name: 'promotionDetails', params: { id: item.slug }}">
-                        			<img :src="item.image_url" :alt="'Promotion: ' + item.name">
+                    	            <!--original-->
+                        			<!--<img :src="item.image_url" :alt="'Promotion: ' + item.name">-->
+                        			
+                        			<!--logo over transparent bg-->
+                        			<div class="col-sm-6 col-md-4">
+                        			    <img class="transparent_logo" src="//codecloud.cdn.speedyrails.net/sites/5dd46d286e6f640c83000000/image/png/1582826957000/transparent_placeholder.png" alt="">
+                        			    <img  class="store_img" :src="item.store.store_front_url_abs" :alt="item.name + 'Logo'">
+                        			</div>
+                        			
+                        			
                     				<div class="details">
             					    	<span class="title">
             					            <h3>{{ item.name }}</h3>
