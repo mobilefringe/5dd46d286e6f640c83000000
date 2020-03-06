@@ -128,7 +128,7 @@
                             </div>
                             <div class="row margin_60">
                                 <div class="col-md-12">
-                		            <router-link class="pull-right" to="/stores">
+                		            <router-link class="pull-right" to="/directory">
                 		                <div class="animated_btn">Back to Directory</div>    
                 		            </router-link>
                 		        </div>
