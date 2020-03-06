@@ -145,7 +145,7 @@ define([], function () {
             ]
         },
         {
-            path: '/stores',
+            path: '/directory',
             component: view('default'),
             meta: {
                 breadcrumb: 'Directory',
@@ -153,7 +153,7 @@ define([], function () {
             children: [
                 {   
                     path: '',
-                    component: view('stores'),
+                    component: view('directory'),
                     name: 'storeList'
                 },
                 {
