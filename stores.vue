@@ -5,7 +5,7 @@
             <div v-if="dataLoaded" v-cloak>
         		<div class="inside_page_header" v-bind:style="{ background: 'linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), #000 url(' + pageBanner.image_url + ') center center' }">
                     <div class="main_container position_relative">
-                        <h1>Directory</h1>
+                        <h1>STORES!</h1>
                     </div>
                 </div>
         		<div class="main_container">
