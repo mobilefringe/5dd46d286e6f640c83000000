@@ -90,7 +90,7 @@
                         <transition-group name="custom-classes-transition" enter-active-class="animated fadeIn" leave-active-class="animated fadeOut" tag="div">
                             <div v-for="(store, index) in filteredStores" :key="index">
                     			<div class="store_name">
-                    			    <router-link :to="'/stores/'+ store.slug">
+                    			    <router-link :to="'/directory/'+ store.slug">
                     			        <p>{{ store.name }}</p>
                     			    </router-link>
                     			</div>
