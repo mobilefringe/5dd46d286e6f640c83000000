@@ -129,6 +129,11 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'vuex-router-syn
                         href: "/contact-us",
                         sub_menu: [
                             {
+                                name: "COVID-19 Updates",
+                                href: "/pages/bowlescrossing-covid-19-updates",
+                                target: null
+                            },
+                            {
                                 name: "Contact Us",
                                 href: "/contact-us",
                                 target: null
