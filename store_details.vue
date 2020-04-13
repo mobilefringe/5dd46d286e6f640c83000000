@@ -56,11 +56,12 @@
                                 <h2 class="store_details_title">Delivery Options:</h2>
                                 <div class="store_details_delivery">
                                     <img v-if="hasDoordash" class="delivery_option" src="//codecloud.cdn.speedyrails.net/sites/5d8ac35a6e6f647bec090000/image/png/1568400931000/doordash.png" alt="Delivery available with DoorDash" />
+                                    <img v-if="hasDrizly" class="delivery_option" src="//codecloud.cdn.speedyrails.net/sites/5dd46d286e6f640c83000000/image/png/1586796088053/drizly_logo.png" alt="Delivery available with Drizly" />
                                     <img v-if="hasGrubhub" class="delivery_option" src="//codecloud.cdn.speedyrails.net/sites/5d8ac35a6e6f647bec090000/image/png/1568400381000/grubhub.png" alt="Delivery available with Grubhub" />
                                     <img v-if="hasPostmates" class="delivery_option" src="//codecloud.cdn.speedyrails.net/sites/5d8ac35a6e6f647bec090000/image/png/1569270191004/postmates.png" alt="Delivery available with Postmates" />
                                     <div v-if="hasRestaurantDelivery" class="delivery_option"><span>Restaurant Delivery</span></div>
+                                    <img v-if="hasToast" class="delivery_option" src="//codecloud.cdn.speedyrails.net/sites/5dd46d286e6f640c83000000/image/png/1586796105957/toast_takeout.png" alt="Delivery available with Toast TakeOut" />
                                     <img v-if="hasUberEats" class="delivery_option" src="//codecloud.cdn.speedyrails.net/sites/5d8ac35a6e6f647bec090000/image/png/1568400422000/ubereats.png" alt="Delivery available with Uber Eats" />
-                                    
                                 </div>
                             </div>
                             <div v-if="currentStore.events">
@@ -167,7 +168,9 @@
                     hasGrubhub: false,
                     hasPostmates: false,
                     hasRestaurantDelivery: false,
-                    hasUberEats: false
+                    hasUberEats: false,
+                    hasToast: false,
+                    hasDrizly: false
                 }
             },
             props:['id'],
@@ -285,6 +288,12 @@
                             }
                             if (_.includes(subcategories, 8328)) {
                                 this.hasRestaurantDelivery = true;   
+                            }
+                            if (_.includes(subcategories, 9374)) {
+                                this.hasDrizly = true;   
+                            }
+                            if (_.includes(subcategories, 9375)) {
+                                this.hasToast = true;   
                             }
                         }
                     
